@@ -1,0 +1,18 @@
+{
+    "token": "Bot token here",
+    "api": "https://discord.com/api/v8/applications/--CLIENT ID HERE---/commands",
+    "commands": [
+        {
+            "name": "favmusic",
+            "description": "Set your favourite music",
+            "options": [
+                {
+                    "name": "url",
+                    "description": "Type in a url from youtube",
+                    "type": 3,
+                    "required": true
+                }
+            ]
+        }
+    ]
+}
