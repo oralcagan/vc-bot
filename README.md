@@ -1,4 +1,4 @@
-![Logo](https://github.com/oralcagan/vc-bot/blob/assets/logo.png)
+![Logo](https://github.com/oralcagan/vc-bot/blob/main/assets/logo.png)
 
 # Voice Command Bot
 This bot is currently in development.So it is basically a worse than average discord bot with voice command feature. It currently can only detect one voice command, which is the "!play" command. I plan to add more commands in the future.
@@ -29,4 +29,4 @@ add-command/ is a script that sends post requests to Discord API to add the slas
 You can import wit.zip to your wit.ai app.
 
 ## A diagram
-![Logo](https://github.com/oralcagan/vc-bot/blob/assets/diagram.png)
+![Logo](https://github.com/oralcagan/vc-bot/blob/main/assets/diagram.png)
