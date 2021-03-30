@@ -4,7 +4,7 @@ class Say implements I.Command {
     id = 2
     role = false
     thisPath : string
-    usage = "Bot echoes the text you input.\nUsage: <prefix>[PATH] -text <PUT TEXT>";
+    usage = "Bot echoes the text you input.\nUsage: ![PATH] -text <TEXT>";
     exec = async (args: Map<string, I.Argument>, requiredRefs: I.RequiredCommandReferences, thisPath : string) : Promise<boolean> => {
         var text = args.get("-text") as any;
         //Do this in executable module

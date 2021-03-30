@@ -6,11 +6,12 @@ import AudioHandlerMap from '../util/audioHandlerMap';
 
 class Listen implements I.Command {
     id = 4
-    role = "vc"
-    usage = "yeet"
+    role = false
+    usage = "!listen"
     exec = async (args: Map<string, I.Argument>, requiredRefs : I.RequiredCommandReferences) : Promise<boolean> => {
         let audioHandlerMap : AudioHandlerMap = requiredRefs.globalRefs.get(consts.VCHANNELS);
-        if(audioHandlerMap.has(requiredRefs.message.guild.id)) {
+        let isClientInVC = requiredRefs.message.client.voice.connections.has(requiredRefs.message.member.voice.channelID);
+        if(audioHandlerMap.has(requiredRefs.message.guild.id) && isClientInVC) {
             let handler = audioHandlerMap.get(requiredRefs.message.guild.id);
             handler.inputHandler.addMember(requiredRefs.guildMember);
         }

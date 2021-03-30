@@ -6,8 +6,8 @@ import AudioHandlerMap from '../util/audioHandlerMap';
 
 class Play implements I.Command {
     id = 3
-    role = "audio"
-    usage = "yeet"
+    role =  false
+    usage = "!play -url <url>"
     exec = async (args: Map<string, I.Argument>, requiredRefs: I.RequiredCommandReferences): Promise<boolean> => {
         let gID: string;
         let vchannel: VoiceChannel;
